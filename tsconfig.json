@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "src/*": ["./src/*"],
+      "shadcn/*": ["./src/@/components/ui/*"],
+      "containers/*": ["./src/containers/*"]
     },
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],

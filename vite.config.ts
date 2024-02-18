@@ -7,7 +7,9 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      src: '/src',
+      shadcn: path.resolve(__dirname, 'src/@/components/ui'),
+      containers: path.resolve(__dirname, '/src/containers'),
     },
   },
 });
